@@ -1,10 +1,7 @@
-/* main css file  */
-
-body{
+body {
   font-family: Raleway, sans-serif;
 }
-
-.container{
+.container {
   display: grid;
   height: 100vh;
   grid-template-columns: 0.35fr 0.7fr 1fr 1fr;
@@ -15,72 +12,112 @@ body{
     "login login news hero"
     "footer footer footer footer";
   grid-gap: 10px;
-  font-size:14px;
+  font-size: 14px;
+  color: white;
+  /*   border: solid 1px red; */
+  /*   border-radius: 10px; */
 }
-nav{background-color: red; grid-area: nav;}
+nav {
+  background-color: red;
+  grid-area: nav;
+}
 nav > .menu-header-container ul {
-  list-style:none;
+  list-style: none;
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
 }
-nav > .menu-header-container ul > li {
-  
-/*   width: 50%; */
+nav > .menu-header-container ul > li > a:link {
+  /*   width: 50%; */
+  padding: 25px 25px;
+  color: white;
+  text-decoration: none;
 }
-#logo{background-color:pink;grid-area: logo;}
-#banner{background-color:green;grid-area: banner;}
-#login{background-color:orange;grid-area: login;}
-.container>#login {
+#logo {
+  /*   padding: 25px 25px; */
+  background-color: pink;
+  grid-area: logo;
+}
+#logo > img {
+  margin: auto 0px;
+  width: 99.9%;
+  height: 99.9%;
+}
+#banner {
+  /*   padding: 25px 25px; */
+  background-color: green;
+  grid-area: banner;
+}
+#banner > img {
+  margin: auto 0px;
+  width: 99.9%;
+  height: 99.9%;
+}
+#login {
+  background-color: orange;
+  grid-area: login;
+}
+.container > #login {
   background-color: orange;
   grid-area: login;
   padding: 25px 25px;
 }
-#login>#register>.form-group{
-    background-color: rgb(241, 241, 186);
-    
-    border: #f8f6f8 solid 1px;
-    padding: 25px 25px;
-    border-radius: 5px;
+#login > #register > .form-group {
+  background-color: rgb(241, 241, 186);
 
-    display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr;
-    grid-template-areas:
-      "label1 input-field"
-      "email email-field"
-      "button1 button1";
+  border: #f8f6f8 solid 1px;
+  padding: 25px 25px;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  grid-template-rows: 0.7fr 0.7fr 0.7fr;
+  grid-template-areas:
+    "label1 input-field"
+    "email email-field"
+    "button1 button1";
 }
 
-#label{
-grid-area: label1;
-color: #000;
+#label {
+  grid-area: label1;
+  color: #000;
 }
-#input-field{
+#input-field {
   grid-area: input-field;
 }
-#email{
+#email {
   grid-area: email;
   color: #000;
 }
-#email-field{
+#email-field {
   grid-area: email-field;
 }
-#btn{
+#btn {
   grid-area: button1;
 }
-#btn>button{
+#btn > button {
   background-color: #800080;
   width: 100%;
   height: 50px;
-  
 }
-#news{background-color:purple;grid-area: news;}
-#hero{background-color:blue;grid-area: hero;}
-footer{background-color:black;grid-area:footer;}
+#news {
+  padding: 25px 25px;
+  background-color: purple;
+  grid-area: news;
+}
+#hero {
+  padding: 25px 25px;
+  background-color: blue;
+  grid-area: hero;
+}
+footer {
+  padding: 25px 25px;
+  background-color: black;
+  grid-area: footer;
+}
 
-@media only screen and (max-width: 550px){
-  .container{
+@media only screen and (max-width: 550px) {
+  .container {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.9fr 1fr 2.2fr 2fr 2fr 2fr 1fr;
     grid-template-areas:
@@ -92,6 +129,5 @@ footer{background-color:black;grid-area:footer;}
       "hero hero"
       "footer footer";
     color: white;
-    
   }
 }
