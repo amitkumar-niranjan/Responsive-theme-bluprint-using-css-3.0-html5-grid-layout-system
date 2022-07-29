@@ -2,3 +2,7 @@
 #Wordpress 6.0#
 
 This is a simple WordPress application to register or subscribe for news letter, for loggedin user and not loggedin user.
+
+Live site here : 
+https://codepen.io/pen?template=vYRxdKp
+
